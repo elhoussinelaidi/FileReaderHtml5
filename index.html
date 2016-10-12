@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<meta name=viewport content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-touch-fullscreen" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<title>ImageUploader FileReader Html5</title>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="setting"></div>
+<div class="setting image_picker">
+  <h2>Image</h2>
+  <div class="settings_wrap">
+    <label class="drop_target">
+      <div class="image_preview"></div>
+      <input id="inputFile" type="file"/>
+    </label>
+    <div class="settings_actions vertical"><a data-action="choose_from_uploaded"><i class="fa fa-picture-o"></i> Choose from Uploads</a><a data-action="remove_current_image" class="disabled"><i class="fa fa-ban"></i> Remove Current Image</a></div>
+    <div class="image_details">
+      <label class="input_line image_title">
+        <input type="text" placeholder="Title"/>
+      </label>
+      <a data-action="confirm_image_details" class="confirm"><i class="fa fa-check-circle"></i></a>
+    </div>
+  </div>
+</div>
+<div class="setting"></div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="file.js"></script>
+</body>
+</html>
